@@ -21,7 +21,7 @@ copy .\ufo50\ext .\assets\
 copy .\ufo50\*.dat .\assets\
 copy .\ufo50\options.ini .\assets\
 copy .\ufo50\data.win .\assets\game.droid
-copy .\base\AndroidWrapper2024.8.0.216_VM.apk UFO50Wrapper.apk
+copy .\base\AndroidWrapper2024.8.0.216_VM_debug.apk UFO50Wrapper.apk
 
 REM Clean wrapper apk
 echo Preparing wrapper...
