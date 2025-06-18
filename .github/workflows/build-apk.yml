@@ -10,7 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -19,8 +20,8 @@ jobs:
           java-version: '17'
           cache: 'gradle'
 
-      - name: Set execute permission
-        run: chmod +x gradlew
+      - name: Set execute permission for Gradle
+        run: chmod +x ./gradlew
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
